@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body {
+    font-family: Mukta, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fdeacd;
+    color: #fdeacd;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container-subwrapper {
+    display: flex;
+}
+
+.container-subwrapper .profile-img {
+    flex-grow: 1;
+}
+
+.container-subwrapper .main-info {
+    flex-grow: 2;
+}
+
+.card {
+    border: 1px solid #fdeacd;
+    background-color: #454545;
+}
+
+.profile-img, .contrast {
+    background-color: inherit;
+}
+
+.profile-img {
+    margin-bottom: 15px;
+}
+
+.profile-img img {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px 0px #454545, -2px -2px 20px 0px #fdb64b;
+    transition: transform 0.4s linear;
+}
+
+.profile-img img:hover {
+    transform: scale(1.3);
+}
+
+.main-info {
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.main-info>h1, .main-info>p, .contact-list, .contrast>div, .hobbies>h2, .hobbies>ul, .btn-group {
+    width: fit-content;
+}
+
+.main-info>h1, .main-info>p, .hobbies>h2, .hobbies>ul {
+    line-height: 40px;
+}
+
+.main-info>h1, .main-info>p {
+    margin: 30px auto;
+}
+
+.hobbies>h2 {
+    margin: 30px auto 15px;
+}
+
+.hobbies>ul {
+    margin: 15px auto 30px;
+}
+
+.main-info>p:first-of-type, .table h2 {
+    margin-bottom: 0px;
+}
+
+.main-info>p:nth-of-type(2), .main-info>p:nth-of-type(3) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-info>p:last-of-type {
+    margin-top: 0;
+}
+
+.main-info>h1, .feedback {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contrast {
+    color: hsla(0, 0%, 27%, 0.9);
+}
+
+.contact-list {
+    margin: 30px auto 20px;
+}
+
+.contrast>div {
+    margin: 20px auto 30px;
+}
+
+a[href^="https://"] {
+    display: inline-block;
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: hsla(0, 0%, 27%, 0.9);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+a[href^="https://"]:link, a[href^="https://"]:visited {
+    color: #fdb64b;
+}
+
+a[href^="https://"]:hover {
+    color: #f59609;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+a[href^="https://"]:active {
+    color: #fff;
+}
+
+.hobbies {
+    border-radius: 30px;
+}
+
+.hobbies>ul {
+    column-count: 2;
+}
+
+.hobbies>ul>li:first-child, .hobbies>ul>li:last-child {
+    list-style: square;
+}
+
+.table, .feedback {
+    margin: 20px auto 0px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table caption>h2 {
+    margin-bottom: 30px;
+}
+
+.row>td {
+    padding: 30px;
+}
+
+.head-row {
+    transition: all 0.5s linear;
+}
+
+.head-row:hover {
+    background-color: #454545;
+    color: #fff;
+}
+
+.row {
+    transition: all 0.5s ease-in-out;
+}
+
+.row:hover {
+    background-color: #f59609;
+    font-weight: 700;
+}
+
+.feedback>legend {
+    text-align: center;
+}
+
+.feedback>legend h2 {
+    margin-top: 3px;
+}
+
+.form-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.form-entity {
+    padding: 5px;
+}
+
+.form-entity>label {
+    display: inline-block;
+    width: 130px;
+}
+
+.form-entity>input {
+    width: 230px;
+}
+
+.form-entity>input, .form-entity>textarea {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid #575757;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: inherit;
+}
+
+.btn-group {
+    margin: 15px auto 0;
+}
+
+.btn {
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 0 10px;
+    background-color: #fdb64b;
+    color: hsla(0, 0%, 27%, 0.9);
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #f59609;
+}
+
+@media (max-width: 650px) {
+
+    .container-subwrapper {
+        display: block;
+    }
+
+    .main-info {
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .hobbies {
+        border-radius: 0px 0px 30px 30px;
+
+    }
+
+    .row>td {
+        padding: 0;
+    }
+
+    .form-wrapper {
+        display: block;
+        width: fit-content;
+    }
+
+    .feedback {
+        padding: 0;
+    }
+
+    .btn-group {
+        margin-bottom: 10px;
+    }
+}

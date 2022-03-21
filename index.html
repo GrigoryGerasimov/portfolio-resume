@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="keywords" content="html, css, coder, project, portfolio, cv">
+    <meta name="description"
+        content="Hello everyone! My name is Grigory Gerasimov, I'm a beginner HTML/CSS Coder and JavaScript Developer and this is my official web portfolio. Hope you enjoy it!">
+    <title>Grigory's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-subwrapper">
+            <div class="card profile-img">
+                <img src="profile_pic.jpg" alt="My profile photo">
+            </div>
+            <div class="card main-info">
+                <h1>Grigory Gerasimov</h1>
+                <p>A <em>beginner HTML/CSS coder</em> and <em>JavaScript developer</em>.</p>
+                <p>Originally from Russia,
+                    currently
+                    based in the Czech Republic.</p>
+                <p>Successfully completed the course <strong>HTML & CSS</strong> of the <strong>Result School</strong>.
+                </p>
+                <p>Eager to
+                    put
+                    my gained knowledge into practice.</p>
+            </div>
+        </div>
+
+        <div class="card contrast">
+            <p class="contact-list">You can find me <strong>here:</strong></p>
+            <div>
+                <a href="https://www.linkedin.com/in/grigory-gerasimov-47898516b/" target="_blank"
+                    title="LinkedIn">LinkedIn</a>|<a href="https://t.me/GrigoryGerasimov" target="_blank"
+                    title="Telegram">Telegram</a>
+            </div>
+        </div>
+        <div class="card hobbies">
+            <h2>My Hobbies:</h2>
+            <ul>
+                <li>Web development and web design</li>
+                <li>Listening to music</li>
+                <li>Youtube, Spotify</li>
+                <li>Exploring new cultural and natural sights</li>
+                <li>Cycling</li>
+                <li>Hiking</li>
+            </ul>
+        </div>
+        <div class="card contrast">
+            <table class="table">
+                <caption>
+                    <h2>Working Experience</h2>
+                </caption>
+                <thead>
+                    <tr class="head-row">
+                        <th>Company Name</th>
+                        <th>Job Title</th>
+                        <th>Employment Date</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td>Hulker Europe Distribution, s.r.o.</td>
+                        <td>Order Administrator</td>
+                        <td>since 08/2020</td>
+                        <td>Prague, Czech Republic</td>
+                    </tr>
+                    <tr class="row">
+                        <td>GEP Worldwide</td>
+                        <td>Senior Application Support Engineer</td>
+                        <td>12/2019-08/2020</td>
+                        <td>Prague, Czech Republic</td>
+                    </tr>
+                    <tr class="row">
+                        <td>GEP Worldwide</td>
+                        <td>Analyst</td>
+                        <td>12/2018-12/2019</td>
+                        <td>Prague, Czech Republic</td>
+                    </tr>
+                    <tr class="row">
+                        <td>Hulker Europe Vertriebs GmbH</td>
+                        <td>Regional Sales Coordinator</td>
+                        <td>04/2017-11/2018</td>
+                        <td>Dresden, Germany</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card">
+            <fieldset class="feedback">
+                <legend>
+                    <h2>Feedback</h2>
+                </legend>
+                <form action="#" method="POST">
+                    <div class="form-wrapper">
+                        <div class="form-group">
+                            <div class="form-entity">
+                                <label for="first-name">Your First Name:</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="John" required />
+                            </div>
+                            <div class="form-entity">
+                                <label for="last-name">Your Last Name:</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Doe" required />
+                            </div>
+                            <div class="form-entity">
+                                <label for="email-id">Your E-Mail:</label>
+                                <input type="email" name="email" id="email-id" placeholder="john.doe@example.test"
+                                    required />
+                            </div>
+                            <div class="form-entity">
+                                <label for="tel-nr">Your Phone Nr:</label>
+                                <input type="tel" name="tel-phone" id="tel-nr" placeholder="+420-XXX-XXX-XXX"
+                                    required />
+                            </div>
+                            <div class="form-entity">
+                                <label for="attach">Your Attachment:</label>
+                                <input type="file" name="attach" id="attach" multiple />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-entity">
+                                <label for="message">Your Message:</label>
+                                <br />
+                                <textarea id="message" cols="56" rows="6" placeholder="Please enter your message..."
+                                    required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn">Send</button>
+                        <button type="reset" class="btn">Reset</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+</body>
+
+</html>
