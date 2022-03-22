@@ -2,7 +2,7 @@
 
 body {
     font-family: Mukta, sans-serif;
-    font-size: 16px;
+    font-size: 2vw;
     font-weight: 400;
     background-color: #fdeacd;
     color: #fdeacd;
@@ -153,6 +153,7 @@ a[href^="https://"]:active {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .table caption>h2 {
@@ -217,6 +218,12 @@ a[href^="https://"]:active {
     font-family: inherit;
 }
 
+#message{
+    box-sizing: border-box;
+    width: 345px;
+    height: 135px;
+}
+
 .btn-group {
     margin: 15px auto 0;
 }
@@ -251,7 +258,10 @@ a[href^="https://"]:active {
 
     .hobbies {
         border-radius: 0px 0px 30px 30px;
+    }
 
+    .table caption>h2 {
+        margin-bottom: 15px;
     }
 
     .row>td {
@@ -270,4 +280,9 @@ a[href^="https://"]:active {
     .btn-group {
         margin-bottom: 10px;
     }
+
+    #message{
+        max-width: 230px;
+    }
+
 }
